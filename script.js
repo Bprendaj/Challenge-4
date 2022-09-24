@@ -109,24 +109,6 @@ function presentQuestions(counter) {
     selectionA.className = "button";
     questionEl.appendChild(selectionA);
 
-    // SELECTION B BUTTON
-    var selectionB = document.createElement("button");
-    selectionB.textContent = questions[counter].b;
-    selectionB.className = "button";
-    questionEl.appendChild(selectionB);
-
-    // SELECTION C BUTTON
-    var selectionC = document.createElement("button");
-    selectionC.textContent = questions[counter].c;
-    selectionC.className = "button";
-    questionEl.appendChild(selectionC);
-
-    // SELECTION D BUTTON
-    var selectionD = document.createElement("button");
-    selectionD.textContent = questions[counter].d;  
-    selectionD.className = "button";  
-    questionEl.appendChild(selectionD); 
-
     // ANSWER
     var answer = questions[counter].answer;
     localStorage.setItem("answer", answer);
